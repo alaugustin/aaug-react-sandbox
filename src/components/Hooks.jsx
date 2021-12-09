@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import List from "./List";
 
-function Hooks({heading1, hooksH2}) {
+function Hooks({ heading1, hooksH2, listData}) {
     const [count, setCount] = useState(0);
     return (
         <div className="container mx-auto px-4 border-b-2 pt-4 pb-2">
@@ -43,11 +44,9 @@ function Hooks({heading1, hooksH2}) {
             <h2 class="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
                 {hooksH2[1]}
             </h2>
-            <ul className="pl-6">
-                <li className="list-disc ">mounting</li>
-                <li className="list-disc ">updating</li>
-                <li className="list-disc ">unmounting</li>
-            </ul>
+
+            <List listData={listData}/>
+
             <p>
                 <a className="no-underline hover:underline text-blue-600" href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/">
                     React Lifecycle Methods Diagram
