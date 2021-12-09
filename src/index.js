@@ -10,10 +10,10 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hooks />
-    <Props name = "Encarnacion" />
-    <UseState />
-    <UseEffect />
+    <Hooks heading1 = "Hooks, Props, useState and useEffect"/>
+    <Props propsH2="What are Props?" name = "Encarnacion" />
+    <UseState useStateH2="useState"/>
+    <UseEffect useEffectH2="useEffect"/>
   </React.StrictMode>,
   document.getElementById('root')
 );

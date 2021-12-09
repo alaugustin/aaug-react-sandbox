@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Hooks() {
+function Hooks({useStateH2}) {
     const temp = () => {};
     const [count, setCount] = useState(0);
     const [age, setAge] = useState(42);
@@ -17,7 +17,7 @@ function Hooks() {
     return (
         <div className="container mx-auto px-4 border-b-2 pt-4 pb-2">
             <h2 className="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                useState
+                {useStateH2}
             </h2>
 
             <h3 className="text-1xl font-normal leading-normal mt-0 mb-2 text-black-800">

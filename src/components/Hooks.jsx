@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-function Hooks() {
+function Hooks({heading1}) {
     const [count, setCount] = useState(0);
     return (
         <div className="container mx-auto px-4 border-b-2 pt-4 pb-2">
             <h1 class="text-4xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                Hooks, Props, useState and useEffect
+                {heading1}
             </h1>
 
             <h2 class="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
@@ -58,3 +58,11 @@ function Hooks() {
 }
 
 export default Hooks;
+
+
+export const Primary = Hooks.bind({});
+Primary.args = {
+    primary: true,
+    isAnchor: false,
+    label: 'Button',
+};

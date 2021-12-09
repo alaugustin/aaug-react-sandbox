@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-function Props({ name }) {
+function Props({ propsH2, name }) {
     // props.name is data from the user defined component props from the component: <Props name = "Encarnacion" />
     return (
         <div className="container mx-auto px-4 border-b-2 pt-4 pb-2">
             <h2 className="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                What are Props?
+                {propsH2}
             </h2>
 
             <ul className="list-disc pl-6 mb-4">
