@@ -1,7 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-function UseState() {
-    return <h1 className={"font-sans text-3xl font-bold"}>Hello Use State!</h1>;
+function Hooks() {
+    const [count, setCount] = useState(0);
+    const [age, setAge] = useState(42);
+    const [fruit, setFruit] = useState('tamarind');
+    const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+
+    console.log([{ count: useState(count) }, { age: useState(age) }, { fruit: useState(fruit) }, { todos: useState(todos) }])
+
+    return (
+        <div>
+            <h1 className="text-4xl font-normal leading-normal mt-0 mb-2 text-black-800">State Hook</h1>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                Click me
+            </button>
+        </div>
+    );
 }
 
-export default UseState;
+export default Hooks;
