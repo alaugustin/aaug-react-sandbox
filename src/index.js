@@ -11,7 +11,7 @@ import './index.css';
 ReactDOM.render(
   <React.StrictMode>
     <Hooks />
-    <Props />
+    <Props name = "Encarnacion" />
     <UseState />
     <UseEffect />
   </React.StrictMode>,
