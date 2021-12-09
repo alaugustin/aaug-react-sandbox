@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Helloworld from './components/HelloWorld';
+import Hooks from './components/Hooks';
+import Props from './components/Props';
+import UseEffect from './components/UseEffect';
+import UseState from './components/UseState';
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Helloworld />
+    <Hooks />
+    <Props />
+    <UseEffect />
+    <UseState />
   </React.StrictMode>,
   document.getElementById('root')
 );
