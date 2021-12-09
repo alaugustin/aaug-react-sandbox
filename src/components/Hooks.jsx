@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Hooks({heading1}) {
+function Hooks({heading1, hooksH2}) {
     const [count, setCount] = useState(0);
     return (
         <div className="container mx-auto px-4 border-b-2 pt-4 pb-2">
@@ -9,44 +9,44 @@ function Hooks({heading1}) {
             </h1>
 
             <h2 class="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                What are hooks?
+                {hooksH2[0]}
             </h2>
 
-            <ul className="list-disc pl-6 mb-4">
-                <li>
+            <ul className="pl-6 mb-4">
+                <li className="list-disc ">
                     are functions which allows one to &ldquo;hook into&rdquo;
                     React state and lifecycle features from function components
                 </li>
-                <li>
+                <li className="list-disc ">
                     transfer of information
 
-                    <ul className="list-disc pl-6">
-                        <li>
+                    <ul className="pl-6">
+                        <li className="list-disc ">
                             state
                             <ul>
-                                <li>local to a component</li>
+                                <li className="list-disc ">local to a component</li>
                             </ul>
                         </li>
 
-                        <li>
+                        <li className="list-disc ">
                             props
-                            <ul className="list-disc pl-6">
-                                <li>global</li>
+                            <ul className="pl-6">
+                                <li className="list-disc ">global</li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li>hooks do not work inside classes</li>
-                <li>only call hooks from React function components</li>
-                <li>only call hooks at the top level</li>
+                <li className="list-disc ">hooks do not work inside classes</li>
+                <li className="list-disc ">only call hooks from React function components</li>
+                <li className="list-disc ">only call hooks at the top level</li>
             </ul>
             <h2 class="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                React lifecycle
+                {hooksH2[1]}
             </h2>
-            <ul className="list-disc pl-6">
-                <li>mounting</li>
-                <li>updating</li>
-                <li>unmounting</li>
+            <ul className="pl-6">
+                <li className="list-disc ">mounting</li>
+                <li className="list-disc ">updating</li>
+                <li className="list-disc ">unmounting</li>
             </ul>
             <p>
                 <a className="no-underline hover:underline text-blue-600" href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/">
@@ -58,11 +58,3 @@ function Hooks({heading1}) {
 }
 
 export default Hooks;
-
-
-export const Primary = Hooks.bind({});
-Primary.args = {
-    primary: true,
-    isAnchor: false,
-    label: 'Button',
-};

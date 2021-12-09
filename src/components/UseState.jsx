@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-function Hooks({useStateH2}) {
+import ClickCounter from "./ClickCounter";
+
+function Hooks({ useStateH2, useStateH3, buttonLabel}) {
     const temp = () => {};
     const [count, setCount] = useState(0);
     const [age, setAge] = useState(42);
@@ -21,7 +23,7 @@ function Hooks({useStateH2}) {
             </h2>
 
             <h3 className="text-1xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                What is use state?
+                {useStateH3}
             </h3>
 
             <ul className="list-disc pl-6 mb-4">

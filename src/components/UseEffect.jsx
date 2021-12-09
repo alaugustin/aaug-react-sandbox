@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-function UseEffect({useEffectH2}) {
+import ClickCounter from "./ClickCounter";
+
+function UseEffect({ useEffectH2, useEffectH3, buttonLabel}) {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -14,7 +16,7 @@ function UseEffect({useEffectH2}) {
             </h2>
 
             <h3 className="text-1xl font-normal leading-normal mt-0 mb-2 text-black-800">
-                What is use effect?
+                {useEffectH3}
             </h3>
 
             <ul className="list-disc pl-6 mb-4">
