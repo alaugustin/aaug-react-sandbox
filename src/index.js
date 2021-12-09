@@ -12,8 +12,8 @@ ReactDOM.render(
   <React.StrictMode>
     <Hooks />
     <Props />
-    <UseEffect />
     <UseState />
+    <UseEffect />
   </React.StrictMode>,
   document.getElementById('root')
 );
