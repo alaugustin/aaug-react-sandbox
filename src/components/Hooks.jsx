@@ -5,11 +5,11 @@ function Hooks({ heading1, hooksH2, listData}) {
     const [count, setCount] = useState(0);
     return (
         <div className="container mx-auto px-4 border-b-2 pt-4 pb-2">
-            <h1 class="text-4xl font-normal leading-normal mt-0 mb-2 text-black-800">
+            <h1 className="text-4xl font-normal leading-normal mt-0 mb-2 text-black-800">
                 {heading1}
             </h1>
 
-            <h2 class="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
+            <h2 className="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
                 {hooksH2[0]}
             </h2>
 
@@ -41,7 +41,7 @@ function Hooks({ heading1, hooksH2, listData}) {
                 <li className="list-disc ">only call hooks from React function components</li>
                 <li className="list-disc ">only call hooks at the top level</li>
             </ul>
-            <h2 class="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
+            <h2 className="text-2xl font-normal leading-normal mt-0 mb-2 text-black-800">
                 {hooksH2[1]}
             </h2>
 
