@@ -6,7 +6,7 @@ function List({ listData }) {
             <ul className="pl-6 mb-4">
 
                 {listData.map(function (object, i) {
-                    return <li className="list-disc ">{object}</li>;
+                    return <li key={i} className="list-disc ">{object}</li>;
                 })}
             </ul>
         </>
