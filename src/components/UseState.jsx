@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import ClickCounter from "./ClickCounter";
 
 function Hooks({ useStateH2, useStateH3, buttonLabel}) {
-    const temp = () => {};
     const [count, setCount] = useState(0);
     const [age, setAge] = useState(42);
     const [fruit, setFruit] = useState("tamarind");

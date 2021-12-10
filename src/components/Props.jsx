@@ -1,5 +1,3 @@
-import React, { Component } from "react";
-
 function Props({ propsH2, name }) {
     // props.name is data from the user defined component props from the component: <Props name = "Encarnacion" />
     return (
