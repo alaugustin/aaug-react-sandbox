@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<hr />
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Fetch Data from an API](https://designcode.io/react-hooks-handbook-fetch-data-from-an-api)
