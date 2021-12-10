@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Helloworld from './components/HelloWorld';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Helloworld />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
