@@ -31,11 +31,11 @@ function App() {
 
       <h1 className='text-5xl mb-8'>Contact our team</h1>
 
-      <div className='grid grid-cols-3 gap-4 mb-16'>
+      <div className='grid grid-cols-3 gap-8 mb-16'>
         {
           teamList.map(item =>
             <div key={item.id} className='flex'>
-              <img src={item.avatar} alt={`${item.first_name} ${item.last_name}`} className='mr-8'/>
+              <img src={item.avatar} alt={`${item.first_name} ${item.last_name}`} className='border-4 border-blue-300 rounded-full mr-8'/>
 
               <div className='self-end'>
                 <p className='text-3xl font-semibold'>
