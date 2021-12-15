@@ -25,14 +25,18 @@ function App() {
 
   return (
     <section className='p-9 dark:bg-black'>
+      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8'>
+        Toggle dark mode
+      </button>
+
       <h1 className='text-5xl mb-8'>Contact our team</h1>
 
-      <div className='flex justify-between mb-16'>
+      <div className='mb-16'>
         {
           teamList.map(item =>
-            <div key={item.id} className='border-solid border-2 border-grey-600 py-4 px-8 rounded-md'>
-              <img src={item.avatar} alt={`${item.first_name} ${item.last_name}`} className='rounded-full flex items-center justify-center mb-2'/>
-              <p>
+            <div key={item.id} className=''>
+              <img src={item.avatar} alt={`${item.first_name} ${item.last_name}`} className=''/>
+              <p className='font-semibold'>
                 {item.first_name} {item.last_name}
               </p>
 
@@ -41,10 +45,6 @@ function App() {
           )
         }
       </div>
-
-      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8'>
-        Toggle dark mode
-      </button>
 
       <p>{support}</p>
     </section>
