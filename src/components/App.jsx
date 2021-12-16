@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "../index.css";
 
-/* ----------------------------------------------------------------------------------------------------
-// ES6 fundimentals
+/* --------------------------------------------------
+// 📓 ES6 fundimentals
 // -- array/object destructuring
 // -- spread operator
 // -- map, filter and reduce "handles error"
@@ -11,9 +11,9 @@ import "../index.css";
 // -- callback function
 // -- asynchronous coding
 // -- async/await
-// Rect fundimentals
+// 📓 Rect fundimentals
 // -- State and useState and useEffect
----------------------------------------------------------------------------------------------------- */
+-------------------------------------------------- */
 
 function App() {
   const [support, setSupport] = useState("");
