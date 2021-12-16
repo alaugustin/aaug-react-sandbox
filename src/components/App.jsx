@@ -24,33 +24,45 @@ function App() {
   }, []);
 
   return (
-    <section className='p-9'>
-      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8'>
-        Toggle dark mode
-      </button>
+      <section className="p-9">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8">
+              Toggle dark mode
+          </button>
 
-      <h1 className='text-5xl mb-8'>Contact our team</h1>
+          <h1 className="text-5xl lg:text-7xl mb-8">Contact Our Team</h1>
 
-      <div className='grid grid-cols-3 gap-8 mb-16'>
-        {
-          teamList.map(item =>
-            <div key={item.id} className='flex'>
-              <img src={item.avatar} alt={`${item.first_name} ${item.last_name}`} className='border-4 border-blue-300 rounded-full mr-8'/>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+              {teamList.map((item) => (
+                  <div
+                      key={item.id}
+                      className="border-b-4 border-blue-300 pb-16 pt-8 md:border-none md:p-0 flex flex-col md:flex-row"
+                  >
+                      <img
+                          src={item.avatar}
+                          alt={`${item.first_name} ${item.last_name}`}
+                          className="mb-8 md:mb-0 shrink-0 min-w-min max-w-xs border-4 border-blue-300 rounded-full md:mr-8"
+                      />
 
-              <div className='self-end'>
-                <p className='text-3xl font-semibold'>
-                  {item.first_name} {item.last_name}
-                </p>
+                      <div className="md:self-end">
+                          <p className="text-2xl lg:text-3xl font-semibold">
+                              {item.first_name} {item.last_name}
+                          </p>
 
-                <a href={`mailto:${item.email}`} className='font-light text-blue-600 hover:text-blue-800 hover:underline'>Email {item.first_name} {item.last_name}</a>
-              </div>
-            </div>
-          )
-        }
-      </div>
+                          <a
+                              href={`mailto:${item.email}`}
+                              className="text-lg lg:text-2xl font-light text-blue-600 hover:text-blue-800 hover:underline"
+                          >
+                              Email {item.first_name} {item.last_name}
+                          </a>
+                      </div>
+                  </div>
+              ))}
+          </div>
 
-      <p className='font-semibold'><i>{support}</i></p>
-    </section>
+          <p className="font-semibold">
+              <i>{support}</i>
+          </p>
+      </section>
   );
 };
 
