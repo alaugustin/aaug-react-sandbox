@@ -37,9 +37,13 @@ function App() {
     fetchData();
   }, []);
 
+  function clickHand() {
+      console.log("button clicked")
+  }
+
   return (
       <section className="p-9">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8">
+          <button onClick={clickHand} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8">
               Toggle dark mode
           </button>
 
