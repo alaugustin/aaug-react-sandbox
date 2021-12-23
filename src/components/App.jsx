@@ -37,9 +37,22 @@ function App() {
     fetchData();
   }, []);
 
-  function clickHand() {
-      console.log("button clicked")
-  }
+  const htmlTag = document.getElementsByTagName("html");
+    htmlTag[0].className = "light";
+
+    function toggleDark() {
+        console.log("toggleDark() executed");
+        htmlTag[0].className = "dark";
+    }
+
+    function toggleLight() {
+        console.log("toggleLight() executed");
+        htmlTag[0].className = "light";
+    }
+
+    function clickHand() {
+        htmlTag[0].className === "light" ? toggleDark() : toggleLight();
+    }
 
   return (
       <section className="p-9">
