@@ -37,17 +37,27 @@ function App() {
         fetchData();
     }, []);
 
-    const htmlTag = document.getElementsByTagName("html");
+    const htmlTag = document.getElementsByTagName("html"),
+        mainSectionTag = document.getElementsByTagName("section"),
+        mainSectionHeader = document.getElementsByTagName("h1");
     htmlTag[0].className = "light";
 
     function toggleDark() {
         console.log("toggleDark() executed");
         htmlTag[0].className = "dark";
+        console.log(mainSectionTag[0].classList);
+
+        mainSectionTag[0].classList.remove("bg-gray-100");
+        mainSectionTag[0].classList.add("bg-gray-900");
     }
 
     function toggleLight() {
         console.log("toggleLight() executed");
         htmlTag[0].className = "light";
+        console.log(mainSectionTag[0].classList);
+
+        mainSectionTag[0].classList.remove("bg-gray-900");
+        mainSectionTag[0].classList.add("bg-gray-100");
     }
 
     function clickHand() {
@@ -55,13 +65,12 @@ function App() {
     }
 
     return (
-        <section className={`p-9 ${htmlTag[0].className === "light" ? "true" : "false"
-            }`}>
+        <section className={`p-9 bg-gray-100`}>
             <button onClick={clickHand} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8">
                 Toggle dark mode
             </button>
 
-            <h1 className="text-5xl lg:text-7xl mb-8">Contact Our Team</h1>
+            <h1 className="text-5xl lg:text-7xl mb-8 text-gray-900">Contact Our Team</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
                 {teamList.map((item) => (
